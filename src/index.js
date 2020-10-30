@@ -13,4 +13,13 @@ function abracadabra() {
     + " ans que vous faites rayonner notre contrée !");
 }
 
-abracadabra();
+function calculerIMC(poids, taille) {
+  let resultat = (poids /Math.pow((taille / 100), 2));
+  return resultat;
+}
+
+let poids = prompt("Quel est votre poids ? (en kg)")
+let taille = prompt("Quel est votre taille ? (en cm)")
+
+alert(calculerIMC(poids, taille));
+
