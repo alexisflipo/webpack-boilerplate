@@ -32,17 +32,27 @@
 //   alert("Vous êtes majeur partout");
 // }
 
-let consommable = "chocolat";
+// let consommable = "chocolat";
 
-switch(consommable) {
-  case "courgette":
-  case "pomme de terre":
-  case "carotte":
-    console.log('Ceci est un légume');
-    break;
-  case "banane":
-    console.log('Ceci est un fruit');
-    break;
-  default:
-    console.log('Ceci n\'est ni un fruit ni un légume');
+// switch(consommable) {
+//   case "courgette":
+//   case "pomme de terre":
+//   case "carotte":
+//     console.log('Ceci est un légume');
+//     break;
+//   case "banane":
+//     console.log('Ceci est un fruit');
+//     break;
+//   default:
+//     console.log('Ceci n\'est ni un fruit ni un légume');
+// }
+
+let gareDeDepart = "";
+let gareDarrivee = "";
+let chauffeur    = "";
+
+if ((gareDeDepart != "" || gareDarrivee != "") && chauffeur != "") {
+  console.log("Le train va démarrer");
+} else {
+  console.log("Le train ne peut pas démarrer");
 }
