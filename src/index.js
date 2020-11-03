@@ -57,6 +57,53 @@
 //   console.log("Le train ne peut pas démarrer");
 // }
 
-let x = 5;
+// let x = 5;
 
-x > 3 ? console.log("X supérieur à trois") : console.log("X inférieur à trois");
+// x > 3 ? console.log("X supérieur à trois") : console.log("X inférieur à trois");
+
+// let i = 1;
+
+// while (i < 5) {
+//   console.log(i);
+//   i++;
+// }
+
+// do {
+//   var prenom = prompt("Quel est votre prénom?");
+// } while (prenom == "" || prenom == null)
+
+// alert(`Bonjour ${prenom}`);
+
+// for (let i = 1; i < 5; i++) {
+//   console.log('Ligne : ' + i);
+// }
+
+
+try {
+  // Erreur ?
+  let recompense = prompt("Choisissez une récompense : épée, arc, haches");
+  let degats;
+
+  switch(recompense) {
+    case 'épée':
+      degats = 40;
+      break;
+    case 'arc':
+      degats = 30;
+      break;
+    case'haches':
+      degats = 20;
+      break;
+    default:
+      throw new Error('Vous ne pouvez pas tricher.');
+  }
+
+  alert('Vous avez choisi : ' + recompense + ' (' + degats + ' dégats).');
+}
+catch(error) {
+  // Erreur !
+  alert(error);
+}
+finally {
+  alert('Fin du programme');
+}
