@@ -47,12 +47,16 @@
 //     console.log('Ceci n\'est ni un fruit ni un légume');
 // }
 
-let gareDeDepart = "";
-let gareDarrivee = "";
-let chauffeur    = "";
+// let gareDeDepart = "";
+// let gareDarrivee = "";
+// let chauffeur    = "";
 
-if ((gareDeDepart != "" || gareDarrivee != "") && chauffeur != "") {
-  console.log("Le train va démarrer");
-} else {
-  console.log("Le train ne peut pas démarrer");
-}
+// if ((gareDeDepart != "" || gareDarrivee != "") && chauffeur != "") {
+//   console.log("Le train va démarrer");
+// } else {
+//   console.log("Le train ne peut pas démarrer");
+// }
+
+let x = 5;
+
+x > 3 ? console.log("X supérieur à trois") : console.log("X inférieur à trois");
