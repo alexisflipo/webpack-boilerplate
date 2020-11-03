@@ -23,11 +23,26 @@
 
 // alert(calculerIMC(poids, taille));
 
-let age = prompt("Quel est votre age ?")
-if (age < 18) {
-  alert("Vous n'êtes pas majeur");
-} else if (age < 21) {
-  alert("Vous êtes majeur en France");
-} else {
-  alert("Vous êtes majeur partout");
+// let age = prompt("Quel est votre age ?")
+// if (age < 18) {
+//   alert("Vous n'êtes pas majeur");
+// } else if (age < 21) {
+//   alert("Vous êtes majeur en France");
+// } else {
+//   alert("Vous êtes majeur partout");
+// }
+
+let consommable = "chocolat";
+
+switch(consommable) {
+  case "courgette":
+  case "pomme de terre":
+  case "carotte":
+    console.log('Ceci est un légume');
+    break;
+  case "banane":
+    console.log('Ceci est un fruit');
+    break;
+  default:
+    console.log('Ceci n\'est ni un fruit ni un légume');
 }
